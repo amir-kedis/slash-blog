@@ -14,7 +14,7 @@ export default function ArticleCard({ article }: { article: Article }) {
         blurDataURL={`https://picsum.photos/seed/${article.id}/40/20`}
         className="border border-primary-green-50 w-full"
       />
-      <h3 className="text-2xl font-semibold line-clamp-2 text-text-primary">
+      <h3 className="text-xl font-semibold line-clamp-2 text-text-primary">
         {article.title}
       </h3>
       <p className=" font-crimson-text line-clamp-3 text-text-secondary">
