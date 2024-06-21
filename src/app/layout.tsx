@@ -28,7 +28,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={playfairDisplay.variable + " " + crimsonText.variable}>
-        <Hero />
         {children}
         <Footer />
       </body>
