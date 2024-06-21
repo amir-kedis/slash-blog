@@ -4,7 +4,7 @@ import xLogoSrc from "@/../public/x-logo.png";
 
 export default function Footer() {
   return (
-    <footer className="font-playfair-display flex flex-col gap-2 md:flex-row md:justify-between items-center container mx-auto px-4 md:px-0 py-4 border-t border-gray-400">
+    <footer className="font-playfair-display flex flex-col gap-2 md:flex-row md:justify-between items-center container mx-auto px-4 md:px-0 py-6 border-t border-gray-400">
       <p className="text-center">
         Design and Code are made by
         <a href="https://github.com/amir-kedis" className="font-bold">

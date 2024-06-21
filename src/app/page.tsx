@@ -1,3 +1,4 @@
+import ArticlesGrid from "@/components/articles-grid";
 import Hero from "@/components/hero";
 import Nav from "@/components/nav";
 
@@ -6,7 +7,7 @@ export default function Home() {
     <div>
       <Hero />
       <Nav />
-      <div>Hello from home</div>
+      <ArticlesGrid />
     </div>
   );
 }

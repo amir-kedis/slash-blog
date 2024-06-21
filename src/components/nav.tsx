@@ -21,7 +21,7 @@ export default function Nav() {
 
   return (
     <nav className="flex text-xl py-2 justify-between items-center container mx-auto font-playfair-display">
-      <Image src={logoSrc} alt="Slash Logo" placeholder="blur" />
+      <Image src={logoSrc} alt="Slash Logo" placeholder="blur" width={65} />
       <div className="flex gap-4">
         {navLinks.map((link) => {
           const isActive = path === link.href;
