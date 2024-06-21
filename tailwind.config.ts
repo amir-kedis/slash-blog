@@ -22,6 +22,9 @@ const config: Config = {
         "text-primary": "#000000",
         "text-secondary": "#283130",
       },
+      fontSize: {
+        clamp: "clamp(2rem, 5vw, 4.5rem)",
+      },
     },
   },
   plugins: [],

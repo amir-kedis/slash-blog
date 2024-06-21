@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display, Crimson_Text } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/footer";
+import Hero from "@/components/hero";
 
 const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={playfairDisplay.variable + " " + crimsonText.variable}>
+        <Hero />
         {children}
         <Footer />
       </body>
