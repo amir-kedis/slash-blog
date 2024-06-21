@@ -15,22 +15,10 @@ export default function Footer() {
       </p>
       <ul className="flex gap-1">
         <a href="https://github.com/amir-kedis">
-          <Image
-            src={githubLogoSrc}
-            alt="Github Logo"
-            width={24}
-            height={24}
-            placeholder="blur"
-          />
+          <Image src={githubLogoSrc} alt="Github Logo" width={24} height={24} />
         </a>
         <a href="https://x.com/AmirKedis">
-          <Image
-            src={xLogoSrc}
-            alt="X Logo"
-            width={24}
-            height={24}
-            placeholder="blur"
-          />
+          <Image src={xLogoSrc} alt="X Logo" width={24} height={24} />
         </a>
       </ul>
     </footer>
