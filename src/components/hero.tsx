@@ -1,10 +1,27 @@
 import Image from "next/image";
 import post1Src from "@/../public/post-1-image.png";
 import post2Src from "@/../public/post-2-image.png";
+import { useCursor } from "@/utils/CursorContext";
 
 export default function Hero() {
+  const { setCursorText, setCursorScale } = useCursor();
+
+  const handleMouseEnter = () => {
+    setCursorText("READ");
+    setCursorScale(5);
+  };
+
+  const handleMouseLeave = () => {
+    setCursorText("");
+    setCursorScale(1);
+  };
+
   return (
-    <div className="grid min-h-[90dvh] md:grid-cols-2 lg:grid-cols-4 font-playfair-display">
+    <div
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      className="grid min-h-[90dvh] md:grid-cols-2 lg:grid-cols-4 font-playfair-display"
+    >
       <div className="relative flex min-h-[25dvh]">
         <p className="z-20 relative text-gray-100 font-bold mt-auto w-full text-xl text-center py-4 underline">
           Seeking validation as an artist.

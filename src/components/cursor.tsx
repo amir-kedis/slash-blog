@@ -2,7 +2,10 @@
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { useEffect } from "react";
 
+import { useCursor } from "@/utils/CursorContext";
+
 export default function Cursor() {
+  const { cursorText, cursorScale } = useCursor();
   const size = 20;
 
   const mouseX = useMotionValue(0);
@@ -13,17 +16,17 @@ export default function Cursor() {
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      mouseX.set(e.clientX - size / 2);
-      mouseY.set(e.clientY - size / 2);
+      mouseX.set(e.clientX - (size * cursorScale) / 2);
+      mouseY.set(e.clientY - (size * cursorScale) / 2);
     };
 
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, [mouseX, mouseY]);
+  }, [mouseX, mouseY, cursorScale]);
 
   return (
     <motion.div
-      className="fixed top-0 left-0 rounded-full bg-gray-100 z-50"
+      className="fixed top-0 left-0 rounded-full bg-gray-900 text-gray-100 z-50 grid place-items-center text-center"
       style={{
         width: size,
         height: size,
@@ -31,6 +34,14 @@ export default function Cursor() {
         x: springX,
         y: springY,
       }}
-    />
+      animate={{
+        width: size * cursorScale,
+        height: size * cursorScale,
+      }}
+    >
+      {cursorText && (
+        <span className="text-lg font-playfair-display">{cursorText}</span>
+      )}
+    </motion.div>
   );
 }
