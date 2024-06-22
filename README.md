@@ -10,6 +10,19 @@ A fancy blog made for slash internship task.
 - Create Post Page
 - Responsive Design
 
+## Client Routes
+
+- `/` - Home Page
+- `/posts/:id` - Post Detail Page
+- `/posts/create` - Create Post Page
+
+## Demo
+
+- [Live Demo](https://slash-blog-olive.vercel.app/)
+
+## Demo Video
+
+
 ## Tech Stack
 
 - Next.js
@@ -19,18 +32,13 @@ A fancy blog made for slash internship task.
 > [!NOTE] 
 > Api calls are simulated using jsonplaceholder.typicode.com
 
-## Running the project
+## Running the project locally
 
 - make sure you have node.js installed
 - clone the repository
 - run `npm install`
 - run `npm run dev`
 
-## Demo
-
-- [Live Demo](https://slash-blog-olive.vercel.app/)
-
-## Demo Video
 
 ## Author
 
