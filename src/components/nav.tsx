@@ -34,9 +34,15 @@ export default function Nav() {
   };
 
   return (
-    <nav className="flex text-xl py-2 justify-between items-center container mx-auto font-playfair-display">
+    <nav className="flex text-xl px-2 py-2 justify-between items-center container mx-auto font-playfair-display">
       <Link href="/">
-        <Image src={logoSrc} alt="Slash Logo" placeholder="blur" width={65} />
+        <Image
+          className="w-10 lg:w-14"
+          src={logoSrc}
+          alt="Slash Logo"
+          placeholder="blur"
+          width={64}
+        />
       </Link>
       <div className="flex gap-4">
         {navLinks.map((link) => {

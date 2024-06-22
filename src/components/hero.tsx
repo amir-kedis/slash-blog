@@ -40,7 +40,7 @@ export default function Hero() {
       onMouseLeave={handleMouseLeave}
       className="grid min-h-[90dvh] md:grid-cols-2 lg:grid-cols-4 font-playfair-display"
     >
-      <Link href="/posts/1" className="relative flex min-h-[25dvh]">
+      <Link href="/posts/1" className="relative flex min-h-[25vh]">
         <p className="z-20 relative text-gray-100 font-bold mt-auto w-full text-xl text-center py-4 underline">
           Seeking validation as an artist.
         </p>
@@ -55,7 +55,7 @@ export default function Hero() {
       </Link>
       <Link
         href="/posts/2"
-        className="text-primary-red-100 bg-primary-red-900 px-4 flex flex-col justify-between py-4 min-h-[25dvh]"
+        className="text-primary-red-100 bg-primary-red-900 px-4 flex flex-col justify-between py-4 min-h-[25vh]"
       >
         <h2 className="underline text-clamp font-bold leading-snug">
           My Version of the truth
@@ -64,7 +64,7 @@ export default function Hero() {
       </Link>
       <Link
         href="/posts/3"
-        className="relative flex flex-col justify-between min-h-[25dvh]"
+        className="relative flex flex-col justify-between min-h-[25vh]"
       >
         <p className="z-20 relative text-primary-green-100 w-full text-center py-4 ">
           art work by: cottonbro studio
@@ -83,7 +83,7 @@ export default function Hero() {
       </Link>
       <Link
         href="/posts/4"
-        className="text-primary-green-100 bg-primary-green-900 px-4 flex flex-col justify-between py-4 min-h-[25dvh]"
+        className="text-primary-green-100 bg-primary-green-900 px-4 flex flex-col justify-between py-4 min-h-[25vh]"
       >
         <h2 className="underline text-clamp font-bold leading-snug">
           What makes art art.
