@@ -22,6 +22,8 @@ A fancy blog made for slash internship task.
 
 ## Demo Video
 
+ <!-- PnKi8D4jXQM  -->
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/PnKi8D4jXQM/0.jpg)](https://www.youtube.com/watch?v=PnKi8D4jXQM) 
 
 ## Tech Stack
 
