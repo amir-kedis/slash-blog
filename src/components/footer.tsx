@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import githubLogoSrc from "@/../public/github-logo.png";
 import xLogoSrc from "@/../public/x-logo.png";
 

@@ -1,5 +1,6 @@
-import { Article } from "@/components/articles-grid";
 import Image from "next/image";
+
+import { Article } from "@/components/articles-grid";
 
 type Params = {
   postId: string;

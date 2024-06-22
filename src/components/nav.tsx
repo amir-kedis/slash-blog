@@ -2,9 +2,11 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import logoSrc from "@/../public/slash-logo.png";
 import { usePathname } from "next/navigation";
+
 import { useCursor } from "@/utils/CursorContext";
+
+import logoSrc from "@/../public/slash-logo.png";
 
 const navLinks = [
   {

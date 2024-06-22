@@ -1,3 +1,22 @@
+/* =============================================================
+ *
+ *
+ *     ██████╗██╗   ██╗██████╗ ███████╗ ██████╗ ██████╗
+ *    ██╔════╝██║   ██║██╔══██╗██╔════╝██╔═══██╗██╔══██╗
+ *    ██║     ██║   ██║██████╔╝███████╗██║   ██║██████╔╝
+ *    ██║     ██║   ██║██╔══██╗╚════██║██║   ██║██╔══██╗
+ *    ╚██████╗╚██████╔╝██║  ██║███████║╚██████╔╝██║  ██║
+ *     ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝
+ *
+ *
+ *     Custom Cursor Component
+ *     This a fancy cursor animated with framer motion
+ *     the cursor provider gives functionality for comonents
+ *     to change the cursor scale and inner text allow for
+ *     fancy effect.
+ *
+ * ==========================================================*/
+
 "use client";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { useEffect } from "react";

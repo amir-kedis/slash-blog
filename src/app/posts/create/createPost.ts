@@ -1,3 +1,6 @@
+// NOTE: this is a server function
+// I made this to mimic the the post creation process
+// in a real world scenario, this function will be pretty different
 "use server";
 
 import { revalidatePath } from "next/cache";

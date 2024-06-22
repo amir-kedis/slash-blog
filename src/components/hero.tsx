@@ -1,8 +1,24 @@
+/* ================================================================================
+ *
+ *
+ *    ███████╗ █████╗ ███╗   ██╗ ██████╗██╗   ██╗ ██╗  ██╗███████╗██████╗  ██████╗
+ *    ██╔════╝██╔══██╗████╗  ██║██╔════╝╚██╗ ██╔╝ ██║  ██║██╔════╝██╔══██╗██╔═══██╗
+ *    █████╗  ███████║██╔██╗ ██║██║      ╚████╔╝  ███████║█████╗  ██████╔╝██║   ██║
+ *    ██╔══╝  ██╔══██║██║╚██╗██║██║       ╚██╔╝   ██╔══██║██╔══╝  ██╔══██╗██║   ██║
+ *    ██║     ██║  ██║██║ ╚████║╚██████╗   ██║    ██║  ██║███████╗██║  ██║╚██████╔╝
+ *    ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝   ╚═╝    ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝ ╚═════╝
+ *
+ *   This Hero section is one of the most appealing parts of the task.
+ *
+ * ============================================================================= */
+
 import Image from "next/image";
 import Link from "next/link";
+
+import { useCursor } from "@/utils/CursorContext";
+
 import post1Src from "@/../public/post-1-image.png";
 import post2Src from "@/../public/post-2-image.png";
-import { useCursor } from "@/utils/CursorContext";
 
 export default function Hero() {
   const { setCursorText, setCursorScale } = useCursor();

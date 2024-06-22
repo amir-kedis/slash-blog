@@ -1,7 +1,9 @@
-import { useCursor } from "@/utils/CursorContext";
-import { Article } from "./articles-grid";
 import Image from "next/image";
 import Link from "next/link";
+
+import { Article } from "./articles-grid";
+
+import { useCursor } from "@/utils/CursorContext";
 
 export default function ArticleCard({ article }: { article: Article }) {
   const { setCursorScale, setCursorText } = useCursor();

@@ -1,7 +1,10 @@
 "use client";
 
 import { useFormState, useFormStatus } from "react-dom";
+
+// server functions
 import createPost from "./createPost";
+
 import { useCursor } from "@/utils/CursorContext";
 
 export default function CreatePostPage() {
