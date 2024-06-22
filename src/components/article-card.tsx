@@ -1,10 +1,27 @@
+import { useCursor } from "@/utils/CursorContext";
 import { Article } from "./articles-grid";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function ArticleCard({ article }: { article: Article }) {
+  const { setCursorScale, setCursorText } = useCursor();
+
+  const handleMouseEnter = () => {
+    setCursorText("GO");
+    setCursorScale(3);
+  };
+
+  const handleMouseLeave = () => {
+    setCursorText("");
+    setCursorScale(1);
+  };
+
   return (
-    <Link href={`/posts/${article.id}`}>
+    <Link
+      href={`/posts/${article.id}`}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <Image
         src={`https://picsum.photos/seed/${article.id}/400/200`}
         alt={article.title}

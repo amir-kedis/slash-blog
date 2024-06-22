@@ -18,6 +18,7 @@ export default function Hero() {
 
   return (
     <div
+      onMouseOver={handleMouseEnter}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       className="grid min-h-[90dvh] md:grid-cols-2 lg:grid-cols-4 font-playfair-display"

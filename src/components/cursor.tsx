@@ -38,6 +38,10 @@ export default function Cursor() {
         width: size * cursorScale,
         height: size * cursorScale,
       }}
+      transition={{
+        type: "tween",
+        ease: "backOut",
+      }}
     >
       {cursorText && (
         <span className="text-lg font-playfair-display">{cursorText}</span>
