@@ -60,9 +60,7 @@ export default function Hero() {
         <h2 className="underline text-clamp font-bold leading-snug">
           My Version of the truth
         </h2>
-        <a className="self-end font-bold" href="#">
-          READ -&gt;
-        </a>
+        <span className="self-end font-bold">READ -&gt;</span>
       </Link>
       <Link
         href="/posts/3"
@@ -90,9 +88,7 @@ export default function Hero() {
         <h2 className="underline text-clamp font-bold leading-snug">
           What makes art art.
         </h2>
-        <a className="self-end font-bold" href="#">
-          READ -&gt;
-        </a>
+        <span className="self-end font-bold">READ -&gt;</span>
       </Link>
     </div>
   );
