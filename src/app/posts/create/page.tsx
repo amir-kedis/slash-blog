@@ -2,12 +2,24 @@
 
 import { useFormState, useFormStatus } from "react-dom";
 import createPost from "./createPost";
+import { useCursor } from "@/utils/CursorContext";
 
 export default function CreatePostPage() {
   const [state, formAction] = useFormState(createPost, {
     message: "",
   });
   const { pending } = useFormStatus();
+  const { setCursorText, setCursorScale } = useCursor();
+
+  const handleMouseEnter = () => {
+    setCursorText("Let's write!");
+    setCursorScale(5);
+  };
+
+  const handleMouseLeave = () => {
+    setCursorText("");
+    setCursorScale(1);
+  };
 
   return (
     <div className="container px-4 py-8 mx-auto font-playfair-display">
@@ -33,6 +45,8 @@ export default function CreatePostPage() {
         <button
           className="font-bold bg-gray-950 text-gray-100 px-8 w-fit py-2 text-xl rounded mt-8 self-center"
           type="submit"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
         >
           SUBMIT
         </button>

@@ -9,6 +9,9 @@ export default async function PostDetailPage({ params }: { params: Params }) {
   const response = await fetch(
     `https://jsonplaceholder.typicode.com/posts/${params.postId}`,
   );
+  if (!response.ok) {
+    throw new Error("Failed to fetch post");
+  }
   const article: Article = await response.json();
 
   return (
